@@ -1825,7 +1825,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #afc996;
+  background: #26ff0b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2899,7 +2899,7 @@ hr {
 }
 .footer-inner {
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .footer-inner {
@@ -2968,7 +2968,4 @@ html.mist .post .post-block .article_TheEnd {
   html.mist .copy-path {
     display: none;
   }
-}
-html.mist .container .footer-inner {
-  text-align: center;
 }
