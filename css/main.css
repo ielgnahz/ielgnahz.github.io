@@ -1741,6 +1741,9 @@ pre .javascript .function {
   max-width: 96px;
   height: auto;
   border: 2px solid #333;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
 }
 .site-author-name {
   margin: 5px 0 0;
@@ -1822,7 +1825,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #60c74e;
+  background: #5effff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2904,10 +2907,68 @@ hr {
     text-align: center;
   }
 }
-.post {
+html.mist .container {
+  background-color: rgba(219,219,219,0.5);
+}
+html.mist .pace .pace-progress {
+  background: #222;
+}
+html.mist .post {
   margin-top: 60px;
-  margin-bottom: 60px;
-  padding: 25px;
-  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
-  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+html.mist .post .post-block {
+  padding: 35px 30px;
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  border-radius: initial;
+}
+html.mist .post .post-block .article_TheEnd {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: center;
+  color: #ccc;
+}
+@media (min-width: 1600px) {
+  html.mist .container .header-inner,
+  html.mist .container .main-inner {
+    width: 960px;
+  }
+}
+@media (max-width: 767px) {
+  html.mist .menu {
+    margin: 10px auto;
+    padding: 0;
+  }
+  html.mist .site-meta {
+    margin-left: 0;
+  }
+  html.mist .site-meta .site-title {
+    line-height: 28px;
+  }
+  html.mist .header-inner {
+    width: auto;
+    margin-bottom: 50px;
+    padding: 10px 10px 0;
+  }
+  html.mist .header-inner .site-brand-wrapper {
+    margin-bottom: 10px;
+    content: " ";
+    display: table;
+    clear: both;
+    width: 100%;
+  }
+  html.mist .container .main-inner {
+    width: auto;
+    margin-top: 0;
+  }
+  html.mist .github-corner {
+    display: none;
+  }
+  html.mist .copy-path {
+    display: none;
+  }
+}
+html.mist .container .footer-inner {
+  text-align: center;
 }
